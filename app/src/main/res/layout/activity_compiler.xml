@@ -13,13 +13,13 @@
         tools:context=".ui.compiler.CompilerActivity">
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/edt_code"
             android:layout_width="match_parent"
             android:layout_height="0dp"
 
-            android:inputType="textPersonName"
-            android:text="Name"
             android:gravity="start"
+            android:inputType="textPersonName"
+            android:text="Type your Code here "
             app:layout_constraintBottom_toTopOf="@+id/outputText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -45,6 +45,6 @@
             android:clickable="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@android:drawable/btn_dialog" />
+            app:srcCompat="@drawable/baseline_play_arrow_24"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
