@@ -2,6 +2,7 @@ package com.blez.compilerx.di
 
 import com.blez.compilerx.data.api.CompilerAPI
 import com.blez.compilerx.repository.CompilerRepository
+import com.blez.compilerx.util.Constants.BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -35,7 +36,7 @@ object AppModule {
     @Singleton
     fun providesCompilerAPI(okHttpClient: OkHttpClient) : CompilerAPI{
         return Retrofit.Builder()
-            .baseUrl("")
+            .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .client(okHttpClient)
             .build()
